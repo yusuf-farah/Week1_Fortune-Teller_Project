@@ -11,7 +11,7 @@ namespace Week1_Fortune_Teller_Project
         static void Main(string[] args)
         {
             // project part 1
-            Console.WriteLine("what is your first name");
+            Console.WriteLine(" what is your first name");
           string firstName = Console.ReadLine();
 
 
@@ -43,15 +43,14 @@ namespace Week1_Fortune_Teller_Project
 
             
         //start part two
-       
            
         if (age  % 2==1)
             {
-                Console.WriteLine("you will retire in 45 years");
+                Console.WriteLine(" congratualtions!! you will retire at age of 45 years");
             }
         else
             {
-                Console.WriteLine("you will retire in 50");
+                Console.WriteLine("you will retire in at the age of  50");
             }
         if(Siblings == 0)
             {
