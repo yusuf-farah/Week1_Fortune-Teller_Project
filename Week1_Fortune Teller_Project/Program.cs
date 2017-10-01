@@ -11,15 +11,15 @@ namespace Week1_Fortune_Teller_Project
         static void Main(string[] args)
         {
             // project part 1
-            Console.WriteLine(" what is your first name");
+            Console.WriteLine("thank you for coming let's go and start, so  what is your first name");
           string firstName = Console.ReadLine();
 
 
-            Console.WriteLine("what is you last name");
+            Console.WriteLine(" great!! what is your last name");
             string lastNme = Console.ReadLine();
 
 
-            Console.WriteLine("how old are you");
+            Console.WriteLine(" awsome! and  how old are you");
             int age = int.Parse(Console.ReadLine());
 
             Console.WriteLine("in a number format what month where you born");
@@ -33,18 +33,14 @@ namespace Week1_Fortune_Teller_Project
             }
             else
             {
-                Console.WriteLine("Now lets move on..");
+                Console.WriteLine("thank you ready for next question ");
             }
 
             Console.Write(" how many siblings do you have?");
             int Siblings = int.Parse(Console.ReadLine());
             //part 2
-
-
-            
-        //start part two
            
-        if (age  % 2==1)
+            if (age  % 2==1)
             {
                 Console.WriteLine(" congratualtions!! you will retire at age of 45 years");
             }
@@ -52,15 +48,15 @@ namespace Week1_Fortune_Teller_Project
             {
                 Console.WriteLine("you will retire in at the age of  50");
             }
-        if(Siblings == 0)
+
+            if (Siblings == 0)
             {
-                Console.WriteLine("you will have vacation home in Florida");
+                Console.WriteLine(" awsome  your vacation home will be  in florida");
             }
-        if(Siblings==1)
-            {
-                Console.WriteLine("nice you will have vacation home in Florida");
-                   
-            }
+
+            
+
+             
             
 
             
