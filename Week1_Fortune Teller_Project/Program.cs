@@ -15,7 +15,7 @@ namespace Week1_Fortune_Teller_Project
           string firstName = Console.ReadLine();
 
 
-            Console.WriteLine(" great!! what is your last name");
+            Console.WriteLine(" great!! what is your last name?");
             string lastNme = Console.ReadLine();
 
 
@@ -24,8 +24,8 @@ namespace Week1_Fortune_Teller_Project
 
             Console.WriteLine("in a number format what month where you born");
             int brMonth = int.Parse(Console.ReadLine());
-            int janMonth = 1;
-            
+            string saving;
+
 
             Console.WriteLine("what is your favorite ROYGBIV color if you don,t know what ROYGBIV is enter help");
             string ROYGBIV = Console.ReadLine().ToLower();
@@ -49,6 +49,7 @@ namespace Week1_Fortune_Teller_Project
 
             Console.Write(" how many siblings do you have?");
             int Siblings = int.Parse(Console.ReadLine());
+            
             int zeroSiblings = 0;
             int oneSiblings = 1;
             int twoSiblings = 2;
@@ -60,8 +61,11 @@ namespace Week1_Fortune_Teller_Project
 
             Console.WriteLine("you fortune will be display momenterly");
 
-            Console.WriteLine(firstName + " " + lastNme); 
-            if(age %2==0)
+            Console.WriteLine(firstName + " " + lastNme );
+
+
+
+            if (age %2==0)
             {
                 Console.WriteLine("you will retire at the  age of 50");
             }
@@ -71,15 +75,17 @@ namespace Week1_Fortune_Teller_Project
             }
 
 
-            if ( brMonth== janMonth)
+            if ( brMonth == 1 && brMonth <= 4)
+
             {
                 Console.WriteLine("you will have 2m dollar your bank by the time of your retirement age");
             }
-            else if (brMonth == 5 - 8)
+            
+            else if (brMonth == 5 && brMonth <= 8)
             {
                 Console.WriteLine(" congrat you will have 200k in your bank at the time of retirement");
             }
-            else if (brMonth == 9 - 12)
+            else if (brMonth == 9 && brMonth <= 12)
             {
                 Console.WriteLine("you will 100k in your bank at the time of retirement ");
             }
