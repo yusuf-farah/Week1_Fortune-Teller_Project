@@ -13,22 +13,23 @@ namespace Week1_Fortune_Teller_Project
             // project part 1
             Console.WriteLine("thank you for coming let's go and start, so  what is your first name");
             string firstName = Console.ReadLine();
-            Console.ReadKey();
+           
 
             Console.WriteLine(" great!! what is your last name?");
             string lastNme = Console.ReadLine();
-            Console.ReadKey();
-
+            
             Console.WriteLine(" awsome! and  how old are you");
             int retirementAge = int.Parse(Console.ReadLine());
-            Console.ReadKey();
+           
 
             Console.WriteLine("in a number format what month where you born");
             int brMonth = int.Parse(Console.ReadLine());
-            int saving = Convert.ToInt32(Console.ReadLine());
+            int saving;
+            
+
             if (brMonth >= 1 && brMonth < 4)
             {
-                saving = 200;
+               saving = 200;
             }
             else if (brMonth >= 5 && brMonth < 8)
             {
@@ -45,15 +46,16 @@ namespace Week1_Fortune_Teller_Project
 
             Console.WriteLine("what is your favorite ROYGBIV color?");
             Console.WriteLine("if you don,t know what ROYGBIV is enter (help)");
-
-            string favoritecolor = Console.ReadLine().ToLower();
-            string modeTran = Console.ReadLine();
-
+            
+                string favoritecolor = Console.ReadLine().ToLower();
+                string modeTran = Console.ReadLine();
+            
 
             if (favoritecolor == "help")
             {
                 Console.WriteLine("The colors are, Red, Orange, Yellow, Green, Blue, Indigo, and Violet");
                 Console.WriteLine("please enter your favorite color");
+                string ROYGBIV = Console.ReadLine().ToUpper();
 
             }
 
@@ -88,6 +90,19 @@ namespace Week1_Fortune_Teller_Project
             Console.Write(" how many siblings do you have?");
             int Siblings = int.Parse(Console.ReadLine().ToLower());
             string vacationHome = Console.ReadLine();
+            Console.WriteLine("you fortune will be display momenterly");
+
+            Console.WriteLine( firstName + " " + lastNme + " will retire in "+ retirementAge + "  in the bank " +saving + "vacation home " +vacationHome+ " your ride "  + modeTran);
+
+
+            if (retirementAge % 2 == 0)
+            {
+                retirementAge = 50;
+            }
+            else
+            {
+                retirementAge = 45;
+            }
 
             if (Siblings == 0)
             {
@@ -109,35 +124,36 @@ namespace Week1_Fortune_Teller_Project
             else if (Siblings <= 0)
             {
                 vacationHome = "bad place";
-                else
-               {
-                    vacationHome = "haha you bad lucky sorry";
-                }
-            
-            Console.WriteLine("you fortune will be display momenterly");
+            }
+            else
+            {
+                vacationHome = "haha you bad lucky sorry";
+            }
 
-            Console.WriteLine(firstName + " " + lastNme+ "will retire in retirementage"+ ". " + "with saving in the bank" +);
-        
+                //Console.WriteLine("you fortune will be display momenterly");
 
-                if (retirementAge % 2 == 0)
-                {
-                    retirementAge =  50;
-                }
-                else
-                {
-                retirementAge = 45;
-                }
+                //Console.WriteLine(firstName + " " + lastNme + "will retire in retirementage" + ". " + "with saving in the bank " + " vacationHome "+"modeTran");
 
 
-                
-
-                 
+                //if (retirementAge % 2 == 0)
+                //{
+                //    retirementAge = 50;
+                //}
+                //else
+                //{
+                //    retirementAge = 45;
+                //}
 
 
 
 
 
-                }
+
+
+
+
+
             }
         }
+    }
     
